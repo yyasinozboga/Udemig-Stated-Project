@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap");
+
+* {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utils */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section:not(#home) {
+  padding: 80px 0;
+}
+
+p {
+  line-height: 30px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.fs-min {
+  font-size: 25px;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-warning {
+  color: #f69314;
+}
+
+.text-secondary {
+  color: darkgray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  color: white;
+  background-color: #f69314;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.nav-list {
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+/* Home */
+#home {
+  background-image: url("./images/hero_1.jpg.webp");
+  background-size: cover;
+  position: relative;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 58, 64, 0.9);
+}
+
+.text {
+  width: 50%;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+/* How It Works */
+#how-it-works {
+  background-color: #f8f9fa;
+}
+
+.col {
+  gap: 10px;
+}
+
+#how-it-works .container {
+  margin-top: 50px;
+  gap: 80px;
+}
+
+/* Properties */
+#properties span {
+  color: darkgray;
+}
+
+.prev-btn,
+.next-btn {
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.properties-top {
+  justify-content: space-between;
+}
+
+.slider-controls {
+  gap: 20px;
+}
+
+#properties .wrapper {
+  margin: 50px 0 70px;
+  gap: 30px;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+#properties .wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#properties .wrapper span {
+  font-size: 14px;
+}
+
+#properties .btn {
+  width: 400px;
+}
+
+#properties .card-img {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+/* Agents */
+#agents {
+  border-bottom: 1px solid #ccc;
+}
+
+#agents p {
+  width: 45%;
+}
+
+#agents .row {
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+#agents .card {
+  position: relative;
+  background-color: #f0f0f0;
+  width: 360px;
+  overflow: hidden;
+}
+
+#agents .card-img {
+  height: 350px;
+}
+
+#agents .card:hover .card-menu {
+  left: 0;
+}
+
+#agents .card-details {
+  height: 80px;
+  padding: 0px 10px;
+  align-items: start;
+  gap: 10px;
+}
+
+#agents span {
+  color: darkgray;
+}
+
+.card-menu {
+  left: -40px;
+  position: absolute;
+  width: 40px;
+  bottom: 80px;
+  height: 180px;
+  background-color: #f69314;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.card-menu a {
+  color: white;
+}
+
+/* About */
+#about .container {
+  gap: 100px;
+  align-items: start;
+}
+
+.about-left {
+  position: relative;
+  width: 100%;
+}
+
+.about-left .slider-controls {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  background-color: #f69314;
+  border-radius: 8px;
+}
+
+.about-left button {
+  color: white;
+}
+
+#about .wrapper {
+  overflow: scroll;
+  justify-content: start;
+  height: 800px;
+  scroll-behavior: smooth;
+}
+
+#about .wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.about-right {
+  width: 100%;
+}
+
+.about-right p {
+  width: 80%;
+}
+
+.about-right ul {
+  margin: 40px 0;
+}
+
+.about-right li {
+  margin: 20px 0;
+}
+
+.about-right i {
+  color: #8bc596;
+  margin-right: 10px;
+}
