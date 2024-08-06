@@ -1,0 +1,272 @@
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .toggle-menu-btn {
+    display: block;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .toggle-menu.show {
+    right: 0;
+  }
+
+  .toggle-menu-item a.active {
+    color: #f69314;
+  }
+
+  #properties .container::before {
+    right: 120px;
+    top: 12px;
+    font-size: 25px;
+  }
+
+  #properties .prev-btn,
+  #properties .next-btn {
+    font-size: 25px;
+    top: -85px;
+  }
+
+  #properties .prev-btn {
+    right: 140px;
+  }
+
+  #properties .next-btn {
+    right: 40px;
+  }
+
+  #about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .wrapper {
+    width: 100%;
+  }
+
+  #about .prev-btn,
+  #about .next-btn {
+    bottom: -54%;
+    font-size: 25px;
+  }
+
+  #about .container div:nth-of-type(2) {
+    margin-top: 320px;
+    width: 100%;
+  }
+
+  #services .container {
+    justify-content: center;
+  }
+
+  #testimonials .container {
+    width: 100%;
+  }
+
+  #testimonials .wrapper {
+    width: 100%;
+    gap: 50px;
+  }
+
+  #testimonials .card {
+    width: 100%;
+  }
+
+  #testimonials p {
+    font-size: 30px;
+  }
+
+  #testimonials .prev-btn,
+  #testimonials .next-btn {
+    top: -25%;
+  }
+
+  #testimonials .prev-btn {
+    left: 10%;
+  }
+
+  #testimonials .next-btn {
+    right: 10%;
+  }
+
+  .testimonials-caption img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .testimonials-caption span {
+    font-size: 25px;
+  }
+
+  #news .container div {
+    width: 100%;
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  #news .card {
+    margin-right: 0;
+  }
+
+  #news h2 {
+    font-size: 30px !important;
+  }
+
+  #news p {
+    font-size: 25px;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .toggle-menu-btn {
+    font-size: 25px;
+  }
+
+  .toggle-menu {
+    width: 250px;
+    padding: 30px;
+    padding-top: 60px;
+  }
+
+  .close-toggle-menu {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+
+  .toggle-menu-item a {
+    font-size: 20px;
+  }
+
+  #home .text {
+    width: 100%;
+  }
+
+  #how-it-works .container {
+    flex-direction: column;
+  }
+
+  #properties .container::before {
+    right: 60px;
+    top: 10px;
+    font-size: 18px;
+  }
+
+  #properties .prev-btn,
+  #properties .next-btn {
+    font-size: 18px;
+    top: -77px;
+  }
+
+  #properties .prev-btn {
+    right: 80px;
+  }
+
+  #properties .next-btn {
+    right: 0px;
+  }
+
+  #properties .card {
+    margin-right: 0;
+  }
+
+  #properties .btn {
+    width: 300px;
+  }
+
+  #agents p {
+    width: 100%;
+  }
+
+  #agents .row {
+    margin-top: 10px;
+  }
+
+  #about .prev-btn,
+  #about .next-btn {
+    bottom: -11%;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  #about .prev-btn {
+    left: 40%;
+  }
+
+  #about .container div:nth-of-type(2) {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  #about .container div:nth-of-type(2) p {
+    width: 100%;
+  }
+
+  #testimonials p {
+    font-size: 20px;
+  }
+
+  #testimonials .prev-btn,
+  #testimonials .next-btn {
+    top: -17%;
+    font-size: 40px;
+  }
+
+  .testimonials-caption img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .testimonials-caption span {
+    font-size: 20px;
+  }
+
+  #news h2 {
+    font-size: 25px !important;
+  }
+
+  #news p {
+    font-size: 20px;
+  }
+
+  #contact .form-container {
+    flex-direction: column;
+  }
+
+  #contact .form {
+    width: 100%;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer .col:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .footer p {
+    width: 100% !important;
+  }
+}

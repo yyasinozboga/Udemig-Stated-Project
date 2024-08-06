@@ -6,6 +6,16 @@
     <!-- Style Css -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Slick Css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <!-- Title -->
     <title>STATED.</title>
   </head>
@@ -14,7 +24,7 @@
     <header class="header d-flex">
       <!-- Navbar -->
       <nav class="navbar container d-flex">
-        <a href="index.html" class="text-light fs-min">STATED.</a>
+        <a href="index.html" class="header-logo text-light fs-min">STATED.</a>
 
         <!-- Nav List -->
         <ul class="nav-list d-flex">
@@ -25,6 +35,38 @@
           <li><a href="#news" class="nav-link">News</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
+        <!-- Toggle Menu -->
+        <button class="toggle-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="toggle-menu">
+          <button class="close-toggle-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <ul>
+            <li class="toggle-menu-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="toggle-menu-item">
+              <a href="#properties" class="nav-link">Properties</a>
+            </li>
+            <li class="toggle-menu-item">
+              <a href="#agents" class="nav-link">Agents</a>
+            </li>
+            <li class="toggle-menu-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="toggle-menu-item">
+              <a href="#news" class="nav-link">News</a>
+            </li>
+            <li class="toggle-menu-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -81,67 +123,103 @@
     <!-- Properties -->
     <section id="properties">
       <div class="container text-center">
-        <!-- Properties Top -->
-        <div class="d-flex properties-top">
-          <h1 class="title text-warning">Properties</h1>
-          <div class="d-flex slider-controls">
-            <button class="prev-btn">Previous</button>
-            <span>/</span>
-            <button class="next-btn">Next</button>
-          </div>
-        </div>
-
-        <div class="wrapper wrapper-1 d-flex">
+        <h1 class="title text-warning">Properties</h1>
+        <!-- Wrapper -->
+        <div class="wrapper d-flex">
           <div class="card">
-            <figure class="card-img">
+            <figure>
               <img src="./images/property_1.jpg.webp" />
             </figure>
 
-            <h3>$3,400,000</h3>
-            <br />
-            <span>6 beds | 4 baths | 4,250 sqft.</span>
-            <br />
-            <br />
-            <span>480 12th, Until 14, San Francisco, CA</span>
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
           </div>
 
           <div class="card">
-            <figure class="card-img">
+            <figure>
               <img src="./images/property_2.jpg.webp" />
             </figure>
 
-            <h3>$3,400,000</h3>
-            <br />
-            <span>6 beds | 4 baths | 4,250 sqft.</span>
-            <br />
-            <br />
-            <span>480 12th, Until 14, San Francisco, CA</span>
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
           </div>
 
           <div class="card">
-            <figure class="card-img">
+            <figure>
               <img src="./images/property_3.jpg.webp" />
             </figure>
 
-            <h3>$3,400,000</h3>
-            <br />
-            <span>6 beds | 4 baths | 4,250 sqft.</span>
-            <br />
-            <br />
-            <span>480 12th, Until 14, San Francisco, CA</span>
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
           </div>
 
           <div class="card">
-            <figure class="card-img">
+            <figure>
               <img src="./images/property_4.jpg.webp" />
             </figure>
 
-            <h3>$3,400,000</h3>
-            <br />
-            <span>6 beds | 4 baths | 4,250 sqft.</span>
-            <br />
-            <br />
-            <span>480 12th, Until 14, San Francisco, CA</span>
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="./images/property_1.jpg.webp" />
+            </figure>
+
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="./images/property_2.jpg.webp" />
+            </figure>
+
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="./images/property_3.jpg.webp" />
+            </figure>
+
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="./images/property_4.jpg.webp" />
+            </figure>
+
+            <div class="d-flex flex-column card-details">
+              <h3>$3,400,000</h3>
+              <span>6 beds | 4 baths | 4,250 sqft.</span>
+              <span>480 12th, Until 14, San Francisco, CA</span>
+            </div>
           </div>
         </div>
 
@@ -166,7 +244,7 @@
 
             <div class="card-details d-flex flex-column">
               <h2 class="fs-min">Kaiara Spencer</h2>
-              <span>Real Estate Agent</span>
+              <span class="text-secondary">Real Estate Agent</span>
             </div>
 
             <!-- Card Menu -->
@@ -193,7 +271,7 @@
 
             <div class="card-details d-flex flex-column">
               <h2 class="fs-min">Dave Simpson</h2>
-              <span>Real Estate Agent</span>
+              <span class="text-secondary">Real Estate Agent</span>
             </div>
 
             <!-- Card Menu -->
@@ -220,7 +298,7 @@
 
             <div class="card-details d-flex flex-column">
               <h2 class="fs-min">Ben Thompson</h2>
-              <span>Real Estate Agent</span>
+              <span class="text-secondary">Real Estate Agent</span>
             </div>
 
             <!-- Card Menu -->
@@ -247,7 +325,7 @@
 
             <div class="card-details d-flex flex-column">
               <h2 class="fs-min">Kyla Stewart</h2>
-              <span>Real Estate Agent</span>
+              <span class="text-secondary">Real Estate Agent</span>
             </div>
 
             <!-- Card Menu -->
@@ -274,7 +352,7 @@
 
             <div class="card-details d-flex flex-column">
               <h2 class="fs-min">Kaiara Spencer</h2>
-              <span>Real Estate Agent</span>
+              <span class="text-secondary">Real Estate Agent</span>
             </div>
 
             <!-- Card Menu -->
@@ -301,7 +379,7 @@
 
             <div class="card-details d-flex flex-column">
               <h2 class="fs-min">Dave Simpson</h2>
-              <span>Real Estate Agent</span>
+              <span class="text-secondary">Real Estate Agent</span>
             </div>
 
             <!-- Card Menu -->
@@ -327,21 +405,14 @@
     <!-- About -->
     <section id="about">
       <div class="container d-flex">
-        <div class="about-left">
-          <div class="wrapper d-flex">
-            <img src="./images/property_1.jpg.webp" />
-            <img src="./images/property_2.jpg.webp" />
-            <img src="./images/property_3.jpg.webp" />
-            <img src="./images/property_4.jpg.webp" />
-          </div>
-
-          <div class="slider-controls d-flex">
-            <button class="prev-btn">Prev</button>
-            <button class="next-btn">Next</button>
-          </div>
+        <div class="wrapper d-flex">
+          <img src="./images/property_1.jpg.webp" />
+          <img src="./images/property_2.jpg.webp" />
+          <img src="./images/property_3.jpg.webp" />
+          <img src="./images/property_4.jpg.webp" />
         </div>
 
-        <div class="about-right">
+        <div>
           <h1 class="title text-warning">We Are The Best RealEstate Company</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <br />
@@ -366,8 +437,454 @@
       </div>
     </section>
 
+    <!-- Services -->
+    <section id="services">
+      <h1 class="title text-warning text-center">Services</h1>
+
+      <div class="container d-flex">
+        <div class="col d-flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="col-details d-flex flex-column">
+            <h2 class="fs-min text-secondary">Search Property</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="text-warning">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <div class="col-details d-flex flex-column">
+            <h2 class="fs-min text-secondary">Buy Property</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="text-warning">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <i class="fa-solid fa-house-circle-check"></i>
+          <div class="col-details d-flex flex-column">
+            <h2 class="fs-min text-secondary">Invest a Home</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="text-warning">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <i class="fa-solid fa-hotel"></i>
+          <div class="col-details d-flex flex-column">
+            <h2 class="fs-min text-secondary">Post Properties</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="text-warning">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <div class="col-details d-flex flex-column">
+            <h2 class="fs-min text-secondary">Property Locator</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="text-warning">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <div class="col-details d-flex flex-column">
+            <h2 class="fs-min text-secondary">Stated Apps</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="text-warning">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container d-flex flex-column">
+        <h1 class="title text-warning">People Says...</h1>
+
+        <div class="wrapper d-flex">
+          <div class="card d-flex flex-column">
+            <p class="text-center fs-min text-secondary">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              nostrum vitae explicabo dolore ratione. Quia iure quod ipsa
+              blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae
+              dolorum laudantium."
+            </p>
+
+            <div class="testimonials-caption d-flex">
+              <img src="./images/person_4.jpg.webp" />
+              <span class="text-secondary">Robert Spears</span>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column">
+            <p class="text-center fs-min text-secondary">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              nostrum vitae explicabo dolore ratione. Quia iure quod ipsa
+              blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae
+              dolorum laudantium."
+            </p>
+
+            <div class="testimonials-caption d-flex">
+              <img src="./images/person_4.jpg.webp" />
+              <span class="text-secondary">Bruce Rogers</span>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column">
+            <p class="text-center fs-min text-secondary">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              nostrum vitae explicabo dolore ratione. Quia iure quod ipsa
+              blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae
+              dolorum laudantium."
+            </p>
+
+            <div class="testimonials-caption d-flex">
+              <img src="./images/person_3.jpg.webp" />
+              <span class="text-secondary">John Smith</span>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column">
+            <p class="text-center fs-min text-secondary">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              nostrum vitae explicabo dolore ratione. Quia iure quod ipsa
+              blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae
+              dolorum laudantium."
+            </p>
+
+            <div class="testimonials-caption d-flex">
+              <img src="./images/person_2.jpg.webp" />
+              <span class="text-secondary">Christine Aguilar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <div class="container">
+        <h1 class="title text-warning text-center">News & Events</h1>
+        <div class="d-flex">
+          <div class="card">
+            <figure class="card-img">
+              <img src="./images/property_1.jpg.webp" />
+            </figure>
+
+            <div class="card-details d-flex flex-column">
+              <h2 class="fs-min">20+ Real Properties for Realtors</h2>
+
+              <p class="text-secondary d-flex">
+                Ham Brook <span>•</span> Jan 18, 2019 <span>•</span>
+                <a href="#" class="text-warning">News</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card-img">
+              <img src="./images/property_2.jpg.webp" />
+            </figure>
+
+            <div class="card-details d-flex flex-column">
+              <h2 class="fs-min">20+ Real Properties for Realtors</h2>
+
+              <p class="text-secondary d-flex">
+                Ham Brook <span>•</span> Jan 18, 2019 <span>•</span>
+                <a href="#" class="text-warning">News</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card-img">
+              <img src="./images/property_3.jpg.webp" />
+            </figure>
+
+            <div class="card-details d-flex flex-column">
+              <h2 class="fs-min">20+ Real Properties for Realtors</h2>
+
+              <p class="text-secondary d-flex">
+                Ham Brook <span>•</span> Jan 18, 2019 <span>•</span>
+                <a href="#" class="text-warning">News</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+      <div class="container">
+        <h1 class="title text-warning text-center">Contact Us</h1>
+
+        <div class="d-flex form-container">
+          <form class="form d-flex flex-column">
+            <h2 class="text-secondary">Contact Form</h2>
+
+            <div class="d-flex form-top">
+              <div class="form-group d-flex flex-column">
+                <label for="name" class="form-label">First Name</label>
+                <input type="text" id="name" class="form-input" />
+              </div>
+
+              <div class="form-group d-flex flex-column">
+                <label for="surname" class="form-label">Last Name</label>
+                <input type="text" id="surname" class="form-input" />
+              </div>
+            </div>
+
+            <div class="form-group d-flex flex-column">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-input" />
+            </div>
+
+            <div class="form-group d-flex flex-column">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" />
+            </div>
+
+            <div class="form-group d-flex flex-column">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                class="form-input"
+                placeholder="Write your notes or questions here..."
+                rows="10"
+              ></textarea>
+            </div>
+
+            <button class="btn">Send Message</button>
+          </form>
+
+          <div class="form-info d-flex flex-column">
+            <div class="form-group d-flex flex-column">
+              <h3 class="text-secondary">Address</h3>
+              <p class="text-secondary">
+                203 Fake St. Mountain View, San Francisco, California, USA
+              </p>
+            </div>
+
+            <div class="form-group d-flex flex-column">
+              <h3 class="text-secondary">Phone</h3>
+              <p class="text-warning">+1 232 3235 324</p>
+            </div>
+
+            <div class="form-group d-flex flex-column">
+              <h3 class="text-secondary">Email Address</h3>
+              <p class="text-warning">youremail@domain.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col">
+            <h3 class="text-light">About Stated</h3>
+
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              facere laudantium magnam voluptatum autem. Amet aliquid nesciunt
+              veritatis aliquam.
+            </p>
+          </div>
+
+          <div class="col">
+            <h3 class="text-light">Quick Links</h3>
+
+            <div class="d-flex flex-column">
+              <a href="#about" class="text-secondary">About Us</a>
+              <a href="#services" class="text-secondary">Services</a>
+              <a href="#testimonials" class="text-secondary">Testimonials</a>
+              <a href="#contact" class="text-secondary">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="text-light">Subscribe Newsletter</h3>
+            <h3 class="text-light">Follow Us</h3>
+            <div class="d-flex">
+              <a href="https://www.facebook.com/" class="text-secondary"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/home" class="text-secondary"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/" class="text-secondary"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/feed/" class="text-secondary"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-secondary text-center">
+          Copyright ©2024 All rights reserved | This template is made with by
+          <a href="#" class="text-secondary">Colorlib</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(function () {
+        let headerElem = $(".header");
+        let logo = $(".header-logo");
+        let navMenu = $(".nav-list");
+        let navToggle = $(".toggle-menu-btn");
+
+        $("#properties .wrapper").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          prevArrow: '<button type="button" class="prev-btn">Previous</button>',
+          nextArrow: '<button type="button" class="next-btn">Next</button>',
+          responsive: [
+            {
+              breakpoint: 1280,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 530,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+          ],
+        });
+
+        $("#testimonials .wrapper").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow:
+            '<button type="button" class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>',
+          nextArrow:
+            '<button type="button" class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+        });
+
+        $("#about .wrapper").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: '<button type="button" class="prev-btn">Prev</button>',
+          nextArrow: '<button type="button" class="next-btn">Next</button>',
+        });
+
+        // Scroll
+        $(document).scroll(() => {
+          let scrollTop = $(document).scrollTop();
+
+          if (scrollTop > 0) {
+            navMenu.addClass("is-sticky");
+            logo.css("color", "#000");
+            headerElem.css("background", "#fff");
+            navToggle.css("border-color", "#000");
+            navToggle.css("color", "#000");
+          } else {
+            navMenu.removeClass("is-sticky");
+            logo.css("color", "#fff");
+            headerElem.css("background", "transparent");
+            navToggle.css("border-color", "#fff");
+            navToggle.css("color", "#fff");
+          }
+
+          headerElem.css(
+            scrollTop >= 200
+              ? { padding: "0.5rem", "box-shadow": "0 -4px 10px 1px #999" }
+              : { padding: "1rem 0", "box-shadow": "none" },
+          );
+        });
+
+        $(document).trigger("scroll");
+      });
+    </script>
+
     <!-- JS -->
-    <script type="module" src="main.js"></script>
+    <script>
+      const toggleMenuBtn = document.querySelector(".toggle-menu-btn");
+      const closeToggleMenuBtn = document.querySelector(".close-toggle-menu");
+      const toggleMenu = document.querySelector(".toggle-menu");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navList = document.querySelector(".nav-list");
+
+      toggleMenuBtn.addEventListener("click", () => {
+        toggleMenu.classList.toggle("show");
+      });
+
+      closeToggleMenuBtn.addEventListener("click", () => {
+        toggleMenu.classList.remove("show");
+      });
+
+      navList.addEventListener("click", (e) => {
+        const ele = e.target;
+
+        navLinks.forEach((navLink) => {
+          if (navLink.href === ele.href) {
+            ele.classList.add("active");
+          } else {
+            navLink.classList.remove("active");
+          }
+        });
+      });
+
+      toggleMenu.addEventListener("click", (e) => {
+        const ele = e.target;
+
+        navLinks.forEach((navLink) => {
+          if (navLink.href === ele.href) {
+            ele.classList.add("active");
+          } else {
+            navLink.classList.remove("active");
+          }
+        });
+      });
+    </script>
 
     <!-- Font Awesome JS -->
     <script src="https://kit.fontawesome.com/8f7b92a547.js"></script>
