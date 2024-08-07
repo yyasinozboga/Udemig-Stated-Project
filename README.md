@@ -1,6 +1,8 @@
 # Stated
 
-This project created compatible with users by used HTML5, CSS3 and JavaScript by Yasin Özboğa
+This project was created by Yasin Özboğa
+This project compatible with users was created with HTML5, CSS3 and JavaScript technologies
+Icons, navbar and sliders were used perfectly for increase experience users
 
 ## Used Techs
 
