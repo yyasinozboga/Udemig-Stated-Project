@@ -1,4 +1,4 @@
-# Stated
+# Udemig Stated Project
 
 This project was created by Yasin Özboğa
 This project compatible with users was created with HTML5, CSS3 and JavaScript technologies
